@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <link rel="icon" id="icon" href="/assets/img/salyte.jpg">
+  <link rel="icon" href="/assets/img/salyte.jpg">
   <link rel="stylesheet" href="/assets/css/app.css?v=3">
   <link rel="stylesheet" href="/assets/css/menu.css?v=3">
   <link rel="stylesheet" href="/assets/css/settings.css?v=3">
@@ -13,7 +13,12 @@
   <script src="/assets/js/anym.js?v=3"></script>
   <title>Doge | V4</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YEQ7Q0XRC"></script>
-  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6YEQ7Q0XRC');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6YEQ7Q0XRC');
+  </script>
 </head>
 <body>
   <div id="contextMenu" class="context-menu themesExcluded" style="--ripple-duration: 300ms;">
@@ -21,7 +26,7 @@
       <i class="bi bi-file-spreadsheet"></i> Tab Cloak
     </div>
     <div class="context-submenu themesExcluded" id="contextSubmenu1">
-      <div class="context-menu-item themesExcluded" id="contextItem2" anim="ripple" onclick="tabCloak()">Enable</div>
+      <div class="context-menu-item themesExcluded" anim="ripple" onclick="tabCloak()">Enable</div>
       <div class="context-menu-item themesExcluded" anim="ripple" onclick="disableTabCloak()">Disable</div>
     </div>
     <div class="context-menu-item themesExcluded" id="contextItem3" onclick="visitSite()">
@@ -34,27 +39,29 @@
       <i class="bi bi-gear"></i> View all Settings
     </div>
   </div>
+
   <nav id="mytopnav">
     <button class="btn-main active" anim="ripple">
-      <i class="bi bi-gear" style="font-size:30px;"></i>Baljeet Settings
+      <i class="bi bi-gear" style="font-size:30px;"></i> Baljeet Settings
     </button>
     <button class="btn-main" anim="ripple" onclick="send('/gms')">
-      <i class="bi bi-joystick" style="font-size:30px;"></i>Baljeet Games
+      <i class="bi bi-joystick" style="font-size:30px;"></i> Baljeet Games
     </button>
     <button class="btn-main" anim="ripple" onclick="send('/apps')">
-      <i class="bi bi-grid-fill" style="font-size:30px;"></i>Baljeet Apps
+      <i class="bi bi-grid-fill" style="font-size:30px;"></i> Baljeet Apps
     </button><br>
     <a href="/" class="title" anim="ripple">
       <img src="/assets/img/doge2.jpg" style="width:22px;height:22px;" id="logo"> Baljeet Khan
     </a>
   </nav>
+
   <br>
   <div class="containers" id="settingsContainer">
     <div class="settingscontainer">
       <br>
       <p style="font-weight: bold;">Tab Cloaking</p>
       <p style="margin:0;">Changes the tab title to an educational name.</p>
-      <div class="button-container themesExcluded" style="margin:0;height:115px;background-color:transparent;background:none;">
+      <div class="button-container themesExcluded" style="margin:0;height:115px;background-color:transparent;">
         <button class="option button-container centered-button themesExcluded" id="cloak1" anim="ripple" onclick="driveCloak()">
           <img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png">
         </button>
@@ -72,6 +79,8 @@
         </button>
       </div>
     </div>
+
+    <!-- Additional settings containers -->
     <div class="settingscontainer">
       <br>
       <p style="font-weight: bold;">About:Blank Cloak</p>
@@ -134,6 +143,7 @@
       <button class="option" style="width: 150px;" anim="ripple" onclick="enableParticles()" id="enabledParticles">Disable</button>
     </div>
   </div>
+
   <div id="panicPopup" class="themesExcluded">
     <div id="panicPopup-content" class="themesExcluded">
       <h2 style="font-family:poppins;">Panic Key</h2>
@@ -149,19 +159,10 @@
       <h2 style="font-family:poppins;">Custom Background</h2>
       <input type="text" id="backgroundPopup-input" class="popupInput" placeholder="Background URL">
       <p style="font-size:13px;">Please include "https://" in your URL.</p>
-      <p id="bgErrorMessage" style="display:none;font-size:13px;color:red;">Please enter a valid link.</p><br>
-      <button anim="ripple" onclick="saveBackground()" class="btn-main">Save</button>
+      <p id="bgErrorMessage" style="display:none;font-size:13px;color:red;">Please enter a valid URL.</p><br>
+      <button anim="ripple" onclick="setBackground()" class="btn-main">Set Background</button>
       <button anim="ripple" onclick="closeBackgroundPopup()" class="btn-main">Cancel</button>
     </div>
   </div>
-  <script src="/assets/js/themes.js?v=3"></script>
-  <script src="/assets/js/settings.js?v=3"></script>
-  <script src="/assets/js/main.js?v=3"></script>
-  
-  <!-- Announcement Area -->
-  <div id="announcement" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.8); padding: 10px; color: white; border-radius: 5px; z-index: 999;">
-    <p id="announcementText"></p>
-  </div>
-  
 </body>
 </html>
