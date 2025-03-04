@@ -17,34 +17,63 @@
   <script src="/baremux/index.js?v=3"></script>
   <script src="/wk/wk2.js?v=3"></script>
   <script src="/wk/wk3.js?v=3"></script>
-<div id="contextMenu" class="context-menu themesExcluded" style="--ripple-duration: 300ms;"><div class="context-menu-item with-submenu themesExcluded" id="contextItem" anim="ripple" onclick="toggleSubmenu(event)"><i class="bi bi-file-spreadsheet"></i> Tab Cloak</div><div class="context-submenu themesExcluded" id="contextItem"><div class="context-menu-item themesExcluded" id="contextItem" anim="ripple" onclick="tabCloak()">Enable</div><div class="context-menu-item themesExcluded" anim="ripple" onclick="disableTabCloak()">Disable</div></div><div class="context-menu-item themesExcluded" id="contextItem" onclick="visitSite()"><i class="bi bi-clock-history"></i> Last Visited Site</div><div class="context-menu-item themesExcluded" id="contextItem" onclick="openWindow()"><i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak</div><div class="context-menu-item themesExcluded" id="contextItem" onclick="openSettings()"><i class="bi bi-gear"></i> View all Settings</div></div>
-<nav id="mytopnav">
-  <button class="btn-main" anim="ripple" onclick="send('/settings.html')"><i class="bi bi-gear" style="font-size:30px;"></i>Baljeet Settings</button>
-  <button class="btn-main" anim="ripple" onclick="send('/gms')"><i class="bi bi-joystick" style="font-size:30px;"></i>Baljeet Games</button>
-  <button class="btn-main" anim="ripple" onclick="send('/apps')"><i class="bi bi-grid-fill" style="font-size:30px;"></i>Baljeet Apps</button><br>
-  <a href="#" class="title" anim="ripple"><img src="/assets/img/doge2.jpg" style="width:22px;height:22px;" id="logo"> Baljeet Khan</a>    
-</nav>
+
+  <!-- Announcement Area -->
+  <div id="announcement" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; border-radius: 10px; font-size: 18px; z-index: 1000;">
+    skibidi
+  </div>
+
+  <div id="contextMenu" class="context-menu themesExcluded" style="--ripple-duration: 300ms;">
+    <div class="context-menu-item with-submenu themesExcluded" id="contextItem" anim="ripple" onclick="toggleSubmenu(event)">
+      <i class="bi bi-file-spreadsheet"></i> Tab Cloak
+    </div>
+    <div class="context-submenu themesExcluded" id="contextItem">
+      <div class="context-menu-item themesExcluded" id="contextItem" anim="ripple" onclick="tabCloak()">Enable</div>
+      <div class="context-menu-item themesExcluded" anim="ripple" onclick="disableTabCloak()">Disable</div>
+    </div>
+    <div class="context-menu-item themesExcluded" id="contextItem" onclick="visitSite()">
+      <i class="bi bi-clock-history"></i> Last Visited Site
+    </div>
+    <div class="context-menu-item themesExcluded" id="contextItem" onclick="openWindow()">
+      <i class="bi bi-box-arrow-up-right"></i> About:Blank Cloak
+    </div>
+    <div class="context-menu-item themesExcluded" id="contextItem" onclick="openSettings()">
+      <i class="bi bi-gear"></i> View all Settings
+    </div>
+  </div>
+
+  <nav id="mytopnav">
+    <button class="btn-main" anim="ripple" onclick="send('/settings.html')"><i class="bi bi-gear" style="font-size:30px;"></i>Baljeet Settings</button>
+    <button class="btn-main" anim="ripple" onclick="send('/gms')"><i class="bi bi-joystick" style="font-size:30px;"></i>Baljeet Games</button>
+    <button class="btn-main" anim="ripple" onclick="send('/apps')"><i class="bi bi-grid-fill" style="font-size:30px;"></i>Baljeet Apps</button><br>
+    <a href="#" class="title" anim="ripple"><img src="/assets/img/doge2.jpg" style="width:22px;height:22px;" id="logo"> Baljeet Khan</a>    
+  </nav>
+
   <div style="text-align:center;color:white;margin-top: 80px;z-index:1;" class="themesExcluded">
     <div class="themesExcluded">
       <i class="bi bi-search search" id="search"></i>
       <form method="POST" id="uform" autocomplete="off" class="themesExcluded" style="z-index:1;">
-        <input type="text" name="url" class="browse-input themesExcluded" style="font-family:poppins;font-size:20px;z-index:1;" placeholder="Type URL or search query"><p class="splashText themesExcluded" id="placeholder"></p>
+        <input type="text" name="url" class="browse-input themesExcluded" style="font-family:poppins;font-size:20px;z-index:1;" placeholder="Type URL or search query">
+        <p class="splashText themesExcluded" id="placeholder"></p>
       </form>
     </div>
+
     <div class="footer themesExcluded" style="text-align:right;">
       <a href="https://discord.com" target="new"><i class="bi bi-discord"></i></a>
       <a href="https://github.com/" target="new"><i class="bi bi-github"></i></a>
     </div>
+
     <div class="bottom-right-content themesExcluded">
-    <a href="/info">Baljeet Site Info</a>
+      <a href="/info">Baljeet Site Info</a>
+    </div>
+
+    <script src="/assets/js/main.js?v=3"></script>
+    <script src="/assets/js/index.js?v=3"></script>
+    <script src="/assets/js/themes.js?v=3"></script>
+    <script src="/assets/js/particles.js?v=3"></script>
+    <script src="/assets/js/register.js?v=3" defer></script>
+    <!-- <script type='text/javascript' src='//cogentselfish.com/cc/1e/f1/cc1ef15b8ddac4fa79288c68db740550.js'></script>-->
+    <script type='text/javascript' src='//cogentselfish.com/a1/87/68/a187684b9f023e7b2684450a755b623e.js'></script>
   </div>
-  <script src="/assets/js/main.js?v=3"></script>
-  <script src="/assets/js/index.js?v=3"></script>
-  <script src="/assets/js/themes.js?v=3"></script>
-  <script src="/assets/js/particles.js?v=3"></script>
-  <script src="/assets/js/register.js?v=3" defer></script>
- <!-- <script type='text/javascript' src='//cogentselfish.com/cc/1e/f1/cc1ef15b8ddac4fa79288c68db740550.js'></script>-->
-  <script type='text/javascript' src='//cogentselfish.com/a1/87/68/a187684b9f023e7b2684450a755b623e.js'></script>
-</div>
 </body>
 </html>
